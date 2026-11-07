@@ -1,0 +1,176 @@
+/* Bản in / PDF khổ A4 */
+@page {
+  size: A4;
+  margin: 14mm;
+}
+
+/* Theme nào cũng in nền trắng chữ đen (html[data-theme] để thắng các biến/rule của theme) */
+:root,
+html[data-theme] {
+  color-scheme: light;
+  --bg: #fff;
+  --surface: #fff;
+  --text: #000;
+  --muted: #333;
+  --border: #ccc;
+  --border-strong: #bbb;
+  --accent: #000;
+  --accent-strong: #000;
+}
+
+html[data-theme] body::before {
+  display: none;
+}
+
+html[data-theme] .hero h1 {
+  background: none;
+  color: #000;
+}
+
+html[data-theme] .hero__avatar {
+  background: none;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  font-size: 10.5pt;
+  line-height: 1.45;
+}
+
+.nav,
+.footer,
+.side__brand,
+.cover,
+.mag-index {
+  display: none;
+}
+
+/* Tạp chí: bỏ khung hai trang, in như bố cục chung */
+.spread {
+  display: contents;
+}
+
+.container {
+  width: auto;
+}
+
+/* Luôn hiện nội dung, kể cả phần chưa cuộn tới */
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  flex-direction: row;
+  align-items: center;
+  gap: 16pt;
+  padding: 0 0 12pt;
+}
+
+.hero__avatar {
+  width: 72pt;
+  border: none;
+  box-shadow: none;
+}
+
+.hero h1 {
+  font-size: 22pt;
+}
+
+.hero__title {
+  color: #000;
+  font-size: 13pt;
+}
+
+.hero__bio {
+  max-width: none;
+  margin-top: 8pt;
+}
+
+.contact {
+  margin-top: 8pt;
+  font-size: 10pt;
+}
+
+.section {
+  padding: 10pt 0;
+  border-top: 1pt solid #ccc;
+}
+
+/* Khung highlight: bỏ nền và bóng (trình duyệt thường không in nền), giữ vạch trái */
+.section__title,
+html[data-theme] .section__title {
+  margin-bottom: 8pt;
+  padding: 0 0 0 6pt;
+  border: 0;
+  border-left: 3pt solid #000;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: #000;
+  font-size: 14pt;
+  break-after: avoid;
+}
+
+.tags li {
+  padding: 0 6pt;
+  border: 1pt solid #bbb;
+  background: none;
+  color: #000;
+  font-size: 9.5pt;
+}
+
+.skills {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10pt;
+}
+
+.projects {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10pt;
+}
+
+.card {
+  border: 1pt solid #ccc;
+  box-shadow: none;
+}
+
+.card__body {
+  gap: 6pt;
+  padding: 10pt;
+}
+
+.card p,
+.timeline__period,
+.timeline__desc {
+  color: #333;
+}
+
+.timeline {
+  gap: 10pt;
+}
+
+.timeline__item {
+  grid-template-columns: 112pt 1fr;
+}
+
+.timeline__period {
+  white-space: nowrap;
+}
+
+.timeline__org {
+  color: #000;
+}
+
+.card,
+.skill-group,
+.timeline__item {
+  break-inside: avoid;
+}

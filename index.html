@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Generator</title>
+    <meta name="description" content="Tạo profile cá nhân miễn phí: điền thông tin, chọn bố cục và màu, xem trước ngay, tải PDF hoặc ZIP website tĩnh." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://genprofile.github.io/" />
+    <meta property="og:title" content="Profile Generator" />
+    <meta property="og:description" content="Tạo profile cá nhân miễn phí: điền thông tin, chọn bố cục và màu, xem trước ngay, tải PDF hoặc ZIP website tĩnh." />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;600;700&display=swap" />
+    <script type="module" crossorigin src="./assets/index-CULIF-wq.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/icons-CatRToJ0.js">
+    <link rel="stylesheet" crossorigin href="./assets/icons-De8M_kjZ.css">
+  </head>
+  <body data-mode="edit">
+    <header class="topbar">
+      <button type="button" class="btn btn--ghost btn--sm only-result" id="back-to-edit" data-en="Keep editing">Sửa tiếp</button>
+      <h1 class="topbar__title"><span class="logo" aria-hidden="true">P</span>Profile Generator</h1>
+      <p class="topbar__status only-edit" id="save-status" role="status"></p>
+      <button type="button" class="btn btn--ghost btn--sm topbar__lang" id="lang-toggle"></button>
+      <a class="btn btn--ghost btn--sm topbar__help" id="help-link" href="huong-dan.html" aria-label="Hướng dẫn" data-en-aria-label="Guide"><span class="topbar__help-label" data-en="Guide">Hướng dẫn</span></a>
+      <button type="button" class="btn btn--ghost btn--sm only-edit topbar__clear" id="clear-draft" aria-label="Xoá nháp" data-en-aria-label="Clear draft"><span class="topbar__clear-label" data-en="Clear draft">Xoá nháp</span></button>
+      <button type="button" class="btn btn--primary btn--sm only-edit" id="create" data-en="Create profile">Tạo profile</button>
+
+      <!-- Chế độ xem trước: cùng hàng trên desktop, xuống hàng thứ 2 trên điện thoại -->
+      <div class="result-bar only-result">
+        <p class="result-bar__hint" data-en="Happy with it? Download it or put it on GitHub.">Ưng ý rồi? Tải về hoặc đưa lên GitHub.</p>
+        <button type="button" class="btn btn--sm" id="download-pdf"><span class="btn__label" data-en="Download PDF">Tải PDF</span></button>
+        <button type="button" class="btn btn--sm" id="download-zip"><span class="btn__label" data-en="Download ZIP">Tải ZIP</span></button>
+        <button type="button" class="btn btn--sm" id="to-github" disabled title="Sắp có" data-en-title="Coming soon">
+          GitHub <span class="soon" data-en="Coming soon">Sắp có</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Màn hình khởi động (#/bat-dau): chọn bố cục + màu trước khi vào màn hình chính -->
+    <main class="start only-start" id="start" aria-labelledby="start-title">
+      <div class="start__bg" aria-hidden="true"></div>
+      <div class="start__inner">
+        <h2 class="start__title" id="start-title" data-en="How should your profile look?">Bạn muốn profile trông thế nào?</h2>
+        <p class="start__lead" data-en="Pick a layout and a color. Your content works with every style, and you can change it any time.">Chọn bố cục và màu. Nội dung bạn nhập dùng chung cho mọi kiểu, đổi lại lúc nào cũng được.</p>
+        <div class="segmented start__themes" id="start-themes" role="group" aria-label="Màu profile" data-en-aria-label="Profile color"></div>
+        <div class="start__grid" id="start-layouts" role="group" aria-label="Bố cục profile" data-en-aria-label="Profile layout"></div>
+        <button type="button" class="btn btn--primary start__go" id="start-go"><span id="start-go-label">Bắt đầu</span></button>
+      </div>
+    </main>
+
+    <nav class="tabs only-edit" aria-label="Chế độ xem" data-en-aria-label="View">
+      <button type="button" class="tabs__btn" data-view-tab="edit" aria-pressed="true" data-en="Edit">Sửa</button>
+      <button type="button" class="tabs__btn" data-view-tab="preview" aria-pressed="false" data-en="Preview">Xem trước</button>
+    </nav>
+
+    <main class="workspace" id="workspace" data-view="edit">
+      <div class="editor" id="editor"></div>
+      <section class="preview" id="preview" data-device="desktop" aria-label="Xem trước" data-en-aria-label="Preview">
+        <div class="preview__toolbar">
+          <div class="segmented devices" role="group" aria-label="Khổ xem trước" data-en-aria-label="Preview size">
+            <button type="button" class="seg" data-device-btn="desktop" aria-pressed="true" data-en="Desktop">Máy tính</button>
+            <button type="button" class="seg" data-device-btn="phone" aria-pressed="false" data-en="Phone">Điện thoại</button>
+          </div>
+          <button type="button" class="btn btn--sm" id="change-layout" title="Đổi bố cục" data-en-title="Change layout"><span data-en="Layout:">Kiểu:</span> <span id="layout-name"></span></button>
+          <div class="segmented picker" id="theme-picker" role="group" aria-label="Màu profile" data-en-aria-label="Profile color"></div>
+        </div>
+        <div class="preview__stage">
+          <iframe id="preview-frame" title="Xem trước profile" data-en-title="Profile preview" src="template/index.html?preview&v=7bfd4f68"></iframe>
+          <div class="preview__empty" id="preview-empty" hidden>
+            <p class="preview__empty-title" data-en="This preview uses sample data">Đây là bản xem trước với dữ liệu mẫu</p>
+            <p data-en="Fill in the form on the left and your profile replaces it as you type.">Điền thông tin ở cột bên trái, profile của bạn sẽ thay vào đây ngay khi bạn gõ.</p>
+            <button type="button" class="btn btn--primary" id="preview-sample" data-en="Use sample data">Dùng dữ liệu mẫu</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast-region" id="toast" role="status" aria-live="polite"></div>
+
+  </body>
+</html>

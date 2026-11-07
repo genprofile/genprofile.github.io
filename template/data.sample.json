@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "lang": "vi",
+  "theme": "minimal",
+  "profile": {
+    "fullName": "Nguyễn Văn An",
+    "title": "Frontend Developer",
+    "avatar": "assets/sample-avatar.svg",
+    "cover": "",
+    "location": "Hà Nội",
+    "bio": "Mình là lập trình viên frontend với 3 năm kinh nghiệm xây dựng ứng dụng web nhanh, dễ dùng và dễ bảo trì. Thích làm việc với giao diện, hiệu năng và trải nghiệm người dùng."
+  },
+  "contact": {
+    "email": "an.nguyen@example.com",
+    "phone": "0901 234 567",
+    "website": "https://example.com",
+    "github": "https://github.com/example",
+    "linkedin": "https://www.linkedin.com/in/example"
+  },
+  "skills": [
+    { "group": "Frontend", "items": ["HTML", "CSS", "JavaScript", "TypeScript", "React"] },
+    { "group": "Backend", "items": ["Node.js", "Express", "PostgreSQL"] },
+    { "group": "Công cụ", "items": ["Git", "Vite", "Figma", "Docker"] }
+  ],
+  "projects": [
+    {
+      "name": "Ứng dụng quản lý chi tiêu",
+      "description": "Theo dõi thu chi hằng ngày, biểu đồ theo tháng và đồng bộ trên nhiều thiết bị.",
+      "tech": ["React", "TypeScript", "Supabase"],
+      "image": "assets/sample-project-1.svg",
+      "demoUrl": "https://example.com/expense",
+      "repoUrl": "https://github.com/example/expense"
+    },
+    {
+      "name": "Cửa hàng trực tuyến mini",
+      "description": "Giỏ hàng, thanh toán thử nghiệm và trang quản trị sản phẩm cho cửa hàng nhỏ.",
+      "tech": ["Vue", "Node.js", "PostgreSQL"],
+      "image": "assets/sample-project-2.svg",
+      "demoUrl": "",
+      "repoUrl": "https://github.com/example/shop"
+    },
+    {
+      "name": "Tiện ích thời tiết",
+      "description": "Extension trình duyệt hiển thị thời tiết theo vị trí, cập nhật mỗi 30 phút.",
+      "tech": ["JavaScript", "Chrome Extension"],
+      "image": "",
+      "demoUrl": "https://example.com/weather",
+      "repoUrl": ""
+    }
+  ],
+  "experience": [
+    {
+      "company": "Công ty Công nghệ ABC",
+      "role": "Frontend Developer",
+      "start": "2023-03",
+      "end": "",
+      "description": "• Xây dựng dashboard nội bộ cho hơn 200 nhân viên.\n• Giảm 40% thời gian tải trang nhờ tách code và tối ưu ảnh.\n• Hướng dẫn 2 bạn thực tập sinh."
+    },
+    {
+      "company": "Startup XYZ",
+      "role": "Thực tập sinh Web",
+      "start": "2022-06",
+      "end": "2023-02",
+      "description": "Làm landing page và form đăng ký, viết test cho các component dùng chung."
+    }
+  ],
+  "education": [
+    {
+      "level": "dh",
+      "school": "HUST - Đại học Bách khoa Hà Nội",
+      "degree": "Kỹ sư Công nghệ thông tin",
+      "start": "2018-09",
+      "end": "2023-06"
+    },
+    {
+      "level": "thpt",
+      "school": "THPT Chu Văn An",
+      "degree": "",
+      "start": "2015-09",
+      "end": "2018-06"
+    }
+  ]
+}

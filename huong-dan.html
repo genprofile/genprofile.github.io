@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hướng dẫn — Profile Generator</title>
+    <meta name="description" content="Cách tạo profile cá nhân với Profile Generator: chọn kiểu, điền thông tin, tải PDF hoặc ZIP. Kèm câu hỏi thường gặp." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://genprofile.github.io/huong-dan.html" />
+    <meta property="og:title" content="Hướng dẫn — Profile Generator" />
+    <meta property="og:description" content="Cách tạo profile cá nhân với Profile Generator: chọn kiểu, điền thông tin, tải PDF hoặc ZIP. Kèm câu hỏi thường gặp." />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;600;700&display=swap" />
+    <script type="module" crossorigin src="./assets/huong-dan-BEZeBr4R.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/icons-CatRToJ0.js">
+    <link rel="stylesheet" crossorigin href="./assets/icons-De8M_kjZ.css">
+  </head>
+  <body class="guide-page">
+    <header class="topbar">
+      <a class="btn btn--ghost btn--sm" href="./" id="guide-back"><span data-en="Back to Profile Generator">Về Profile Generator</span></a>
+      <button type="button" class="btn btn--ghost btn--sm topbar__lang" id="lang-toggle"></button>
+    </header>
+
+    <main class="guide">
+      <div class="guide__lang" lang="vi">
+        <h1>Hướng dẫn dùng Profile Generator</h1>
+        <p class="guide__lead">Tạo trang giới thiệu bản thân trong vài phút: điền thông tin, chọn kiểu, tải về. Miễn phí, không cần tài khoản.</p>
+
+        <h2>Các bước</h2>
+        <ol class="guide__steps">
+          <li>
+            <strong>Chọn kiểu.</strong> Lần đầu mở, chọn bố cục (Cổ điển, Sidebar, CV, Bento, Editorial, Tạp chí) và màu.
+            Đổi lại lúc nào cũng được bằng nút “Kiểu: …” phía trên bản xem trước.
+          </li>
+          <li>
+            <strong>Điền thông tin.</strong> Nhập ở cột bên trái, bản xem trước bên phải cập nhật ngay khi bạn gõ.
+            Ô có dấu * là bắt buộc. Muốn xem thử trước, bấm “Dùng dữ liệu mẫu”.
+            Trên điện thoại, dùng hai thẻ “Sửa” và “Xem trước” để chuyển qua lại.
+            Ngôn ngữ của profile (Tiếng Việt hoặc English) chọn ở đầu mục “Thông tin cá nhân”.
+          </li>
+          <li>
+            <strong>Tạo profile.</strong> Bấm “Tạo profile” ở góc trên. Nếu còn ô chưa hợp lệ, app mở đúng ô đó để bạn sửa.
+          </li>
+          <li>
+            <strong>Tải về.</strong> Trong màn hình xem trước:
+            <ul>
+              <li><strong>Tải PDF:</strong> hộp thoại in hiện ra, chọn “Lưu dưới dạng PDF” (Save as PDF).</li>
+              <li>
+                <strong>Tải ZIP:</strong> một website hoàn chỉnh. Giải nén rồi bấm đúp <code>index.html</code> để xem,
+                hoặc đưa lên GitHub Pages (miễn phí) theo hướng dẫn trong file <code>README.md</code> đi kèm.
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2>Câu hỏi thường gặp</h2>
+        <div class="guide__faq">
+          <details>
+            <summary>Thông tin của tôi được lưu ở đâu?</summary>
+            <p>Chỉ trong trình duyệt trên máy bạn (chữ trong localStorage, ảnh trong IndexedDB). Không gửi lên máy chủ nào. Đóng trình duyệt rồi mở lại vẫn còn.</p>
+          </details>
+          <details>
+            <summary>Sao bản nháp của tôi biến mất?</summary>
+            <p>Bản nháp gắn với trình duyệt và máy đang dùng. Mở bằng trình duyệt khác, máy khác, cửa sổ ẩn danh, hoặc sau khi xoá dữ liệu duyệt web thì sẽ không thấy. Hãy giữ lại file ZIP đã tải để không bị mất.</p>
+          </details>
+          <details>
+            <summary>Đổi bố cục hay màu có mất nội dung không?</summary>
+            <p>Không. Nội dung dùng chung cho mọi bố cục và màu, đổi qua lại thoải mái.</p>
+          </details>
+          <details>
+            <summary>Ảnh tải lên có bị giới hạn không?</summary>
+            <p>Ảnh được tự thu nhỏ (cạnh dài nhất tối đa 1200px) và nén JPEG để trang tải nhanh. Nên dùng ảnh rõ nét, không cần ảnh quá lớn.</p>
+          </details>
+          <details>
+            <summary>Lỡ bấm “Xoá nháp” thì sao?</summary>
+            <p>Bấm “Hoàn tác” trên thông báo hiện ra ngay sau đó. Thông báo chỉ hiện trong vài giây.</p>
+          </details>
+          <details>
+            <summary>Sao bản PDF không có màu giống trên web?</summary>
+            <p>Bản PDF dùng kiểu in chung: nền trắng, chữ đen, khổ A4, để dễ đọc và in ra giấy. Màu và bố cục trên web chỉ áp dụng cho website (bản ZIP).</p>
+          </details>
+          <details>
+            <summary>Muốn sửa profile sau khi đã tải về?</summary>
+            <p>Mở lại Profile Generator trên cùng trình duyệt, bản nháp vẫn còn. Sửa xong thì tải PDF hoặc ZIP mới.</p>
+          </details>
+          <details>
+            <summary>Nút “GitHub — Sắp có” là gì?</summary>
+            <p>Tính năng đưa profile thẳng lên GitHub của bạn chỉ bằng một nút, đang được làm. Hiện giờ hãy dùng “Tải ZIP” rồi làm theo <code>README.md</code> trong file ZIP.</p>
+          </details>
+          <details>
+            <summary>Có mất phí không?</summary>
+            <p>Không. Profile Generator miễn phí và không cần đăng ký.</p>
+          </details>
+        </div>
+
+        <p class="guide__cta"><a class="btn btn--primary" href="./">Bắt đầu tạo profile</a></p>
+      </div>
+
+      <div class="guide__lang" lang="en">
+        <h1>How to use Profile Generator</h1>
+        <p class="guide__lead">Make a personal profile page in minutes: fill in your details, pick a style, download. Free, no account needed.</p>
+
+        <h2>Steps</h2>
+        <ol class="guide__steps">
+          <li>
+            <strong>Pick a style.</strong> The first time, choose a layout (Classic, Sidebar, Resume, Bento, Editorial, Magazine) and a color.
+            You can change it any time with the “Layout: …” button above the preview.
+          </li>
+          <li>
+            <strong>Fill in your details.</strong> Type in the left column and the preview on the right updates as you type.
+            Fields marked * are required. To try it out first, click “Use sample data”.
+            On a phone, use the “Edit” and “Preview” tabs to switch between them.
+            Choose the profile language (Tiếng Việt or English) at the top of “Personal info”.
+          </li>
+          <li>
+            <strong>Create your profile.</strong> Click “Create profile” at the top. If a field still needs fixing, the app opens it for you.
+          </li>
+          <li>
+            <strong>Download.</strong> On the preview screen:
+            <ul>
+              <li><strong>Download PDF:</strong> the print dialog opens, choose “Save as PDF”.</li>
+              <li>
+                <strong>Download ZIP:</strong> a complete website. Unzip it and double-click <code>index.html</code> to view it,
+                or put it on GitHub Pages (free) by following the <code>README.md</code> file inside.
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2>FAQ</h2>
+        <div class="guide__faq">
+          <details>
+            <summary>Where is my information stored?</summary>
+            <p>Only in the browser on your device (text in localStorage, images in IndexedDB). Nothing is sent to a server. It is still there after you close and reopen the browser.</p>
+          </details>
+          <details>
+            <summary>Why did my draft disappear?</summary>
+            <p>Your draft belongs to the browser and device you used. In another browser, on another device, in a private window, or after clearing browsing data, you won’t see it. Keep the ZIP you downloaded so you don’t lose your work.</p>
+          </details>
+          <details>
+            <summary>Do I lose my content if I change the layout or color?</summary>
+            <p>No. Your content is shared by every layout and color, so switch as much as you like.</p>
+          </details>
+          <details>
+            <summary>Are uploaded images limited?</summary>
+            <p>Images are resized automatically (longest side up to 1200px) and compressed as JPEG so the page loads fast. Use a sharp image; it doesn’t need to be huge.</p>
+          </details>
+          <details>
+            <summary>I clicked “Clear draft” by mistake. What now?</summary>
+            <p>Click “Undo” on the message that appears right after. The message only stays for a few seconds.</p>
+          </details>
+          <details>
+            <summary>Why doesn’t the PDF have the same colors as the website?</summary>
+            <p>The PDF uses one print style: white background, black text, A4 size, so it is easy to read and print. Colors and layouts apply to the website (the ZIP) only.</p>
+          </details>
+          <details>
+            <summary>How do I edit my profile after downloading it?</summary>
+            <p>Open Profile Generator again in the same browser; your draft is still there. Make your changes, then download a new PDF or ZIP.</p>
+          </details>
+          <details>
+            <summary>What is the “GitHub — Coming soon” button?</summary>
+            <p>A one-click way to publish your profile to your own GitHub is in the works. For now, use “Download ZIP” and follow the <code>README.md</code> inside.</p>
+          </details>
+          <details>
+            <summary>Does it cost anything?</summary>
+            <p>No. Profile Generator is free and needs no sign-up.</p>
+          </details>
+        </div>
+
+        <p class="guide__cta"><a class="btn btn--primary" href="./">Start making your profile</a></p>
+      </div>
+    </main>
+
+  </body>
+</html>

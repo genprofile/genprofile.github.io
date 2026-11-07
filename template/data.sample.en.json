@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "lang": "en",
+  "theme": "minimal",
+  "profile": {
+    "fullName": "Nguyễn Văn An",
+    "title": "Frontend Developer",
+    "avatar": "assets/sample-avatar.svg",
+    "cover": "",
+    "location": "Hà Nội",
+    "bio": "Frontend developer with 3 years of experience building fast, easy-to-use and maintainable web apps. I enjoy working on interfaces, performance and user experience."
+  },
+  "contact": {
+    "email": "an.nguyen@example.com",
+    "phone": "+84 901 234 567",
+    "website": "https://example.com",
+    "github": "https://github.com/example",
+    "linkedin": "https://www.linkedin.com/in/example"
+  },
+  "skills": [
+    {
+      "group": "Frontend",
+      "items": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React"
+      ]
+    },
+    {
+      "group": "Backend",
+      "items": [
+        "Node.js",
+        "Express",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "group": "Tools",
+      "items": [
+        "Git",
+        "Vite",
+        "Figma",
+        "Docker"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Expense tracker",
+      "description": "Track daily income and spending, with monthly charts and sync across devices.",
+      "tech": [
+        "React",
+        "TypeScript",
+        "Supabase"
+      ],
+      "image": "assets/sample-project-1.svg",
+      "demoUrl": "https://example.com/expense",
+      "repoUrl": "https://github.com/example/expense"
+    },
+    {
+      "name": "Mini online store",
+      "description": "Shopping cart, test checkout and a product admin page for small shops.",
+      "tech": [
+        "Vue",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "image": "assets/sample-project-2.svg",
+      "demoUrl": "",
+      "repoUrl": "https://github.com/example/shop"
+    },
+    {
+      "name": "Weather widget",
+      "description": "Browser extension that shows the weather for your location, updated every 30 minutes.",
+      "tech": [
+        "JavaScript",
+        "Chrome Extension"
+      ],
+      "image": "",
+      "demoUrl": "https://example.com/weather",
+      "repoUrl": ""
+    }
+  ],
+  "experience": [
+    {
+      "company": "ABC Technology",
+      "role": "Frontend Developer",
+      "start": "2023-03",
+      "end": "",
+      "description": "• Built an internal dashboard used by 200+ employees.\n• Cut page load time by 40% with code splitting and image optimization.\n• Mentored 2 interns."
+    },
+    {
+      "company": "Startup XYZ",
+      "role": "Web Intern",
+      "start": "2022-06",
+      "end": "2023-02",
+      "description": "Built a landing page and sign-up form, wrote tests for shared components."
+    }
+  ],
+  "education": [
+    {
+      "level": "dh",
+      "school": "HUST - Đại học Bách khoa Hà Nội",
+      "degree": "Engineer's degree in Information Technology",
+      "start": "2018-09",
+      "end": "2023-06"
+    },
+    {
+      "level": "thpt",
+      "school": "THPT Chu Văn An",
+      "degree": "",
+      "start": "2015-09",
+      "end": "2018-06"
+    }
+  ]
+}
